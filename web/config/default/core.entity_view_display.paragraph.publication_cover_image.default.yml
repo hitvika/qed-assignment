@@ -1,0 +1,36 @@
+uuid: 29f70eec-2ed5-4a36-b2f0-7d3ec4084751
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.publication_cover_image.field_cover_image_file
+    - field.field.paragraph.publication_cover_image.field_cover_image_url
+    - paragraphs.paragraphs_type.publication_cover_image
+  module:
+    - file
+    - link
+id: paragraph.publication_cover_image.default
+targetEntityType: paragraph
+bundle: publication_cover_image
+mode: default
+content:
+  field_cover_image_file:
+    type: file_url_plain
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_cover_image_url:
+    type: link
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

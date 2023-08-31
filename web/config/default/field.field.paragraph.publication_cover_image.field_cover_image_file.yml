@@ -1,0 +1,27 @@
+uuid: 294f962b-d94b-4eed-91ef-df5ab204af93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cover_image_file
+    - paragraphs.paragraphs_type.publication_cover_image
+  module:
+    - file
+id: paragraph.publication_cover_image.field_cover_image_file
+field_name: field_cover_image_file
+entity_type: paragraph
+bundle: publication_cover_image
+label: 'cover image file'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt png jpeg'
+  max_filesize: ''
+  description_field: false
+field_type: file

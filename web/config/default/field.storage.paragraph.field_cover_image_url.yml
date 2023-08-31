@@ -1,0 +1,19 @@
+uuid: 7fed53a7-7cdb-4a6b-af97-910391de9e5f
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_cover_image_url
+field_name: field_cover_image_url
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

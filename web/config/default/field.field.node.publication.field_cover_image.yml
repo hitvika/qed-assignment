@@ -1,0 +1,31 @@
+uuid: f2113e84-8ea7-4682-916d-f165cfd16b53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cover_image
+    - node.type.publication
+    - paragraphs.paragraphs_type.publication_cover_image
+  module:
+    - entity_reference_revisions
+id: node.publication.field_cover_image
+field_name: field_cover_image
+entity_type: node
+bundle: publication
+label: 'Cover Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      publication_cover_image: publication_cover_image
+    negate: 0
+    target_bundles_drag_drop:
+      publication_cover_image:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

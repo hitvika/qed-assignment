@@ -1,0 +1,34 @@
+uuid: f3e88184-c531-45da-a700-c9874d379158
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.publication_cover_image.field_cover_image_file
+    - field.field.paragraph.publication_cover_image.field_cover_image_url
+    - paragraphs.paragraphs_type.publication_cover_image
+  module:
+    - file
+    - link
+id: paragraph.publication_cover_image.default
+targetEntityType: paragraph
+bundle: publication_cover_image
+mode: default
+content:
+  field_cover_image_file:
+    type: file_generic
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_cover_image_url:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

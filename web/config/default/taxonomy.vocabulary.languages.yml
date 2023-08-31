@@ -1,0 +1,8 @@
+uuid: f1b100a6-67e6-4b31-873a-563a2b299426
+langcode: en
+status: true
+dependencies: {  }
+name: Languages
+vid: languages
+description: 'Punblications language option'
+weight: 0

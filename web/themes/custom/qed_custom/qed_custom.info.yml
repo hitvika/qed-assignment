@@ -1,0 +1,13 @@
+name: QED
+type: theme
+description: 'QED-custom theme for Publications page'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: stable9
+regions:
+  header: 'Header'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  footer: 'Footer'
+libraries:
+  - qed_custom/global-styling

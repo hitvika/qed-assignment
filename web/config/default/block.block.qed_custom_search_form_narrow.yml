@@ -1,0 +1,23 @@
+uuid: 4356f282-3412-4660-8565-6a31e086035e
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - qed_custom
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: qed_custom_search_form_narrow
+theme: qed_custom
+region: header
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: e5a9b379-f60f-47ce-b4b4-1647911f7c98
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - qed_custom
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: qed_custom_syndicate
+theme: qed_custom
+region: header
+weight: 3
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

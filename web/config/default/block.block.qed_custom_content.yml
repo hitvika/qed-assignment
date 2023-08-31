@@ -1,0 +1,22 @@
+uuid: a8c495f5-5617-4259-9a74-8f0172e092d8
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - qed_custom
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: qed_custom_content
+theme: qed_custom
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

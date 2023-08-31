@@ -1,0 +1,29 @@
+uuid: 1432954d-c48d-4b5b-acce-349bedde5c87
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.publication
+  module:
+    - system
+    - views
+  theme:
+    - qed_custom
+id: views_block__publication_block_1
+theme: qed_custom
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:publication-block_1'
+settings:
+  id: 'views_block:publication-block_1'
+  label: 'The title of the section'
+  label_display: visible
+  provider: views
+  views_label: 'The title of the section'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

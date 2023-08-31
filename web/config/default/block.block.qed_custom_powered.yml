@@ -1,0 +1,22 @@
+uuid: cc6df0f6-f7c3-405d-883e-e9f559dda7fb
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - qed_custom
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: qed_custom_powered
+theme: qed_custom
+region: header
+weight: 2
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

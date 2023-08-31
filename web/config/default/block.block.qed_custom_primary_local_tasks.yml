@@ -1,0 +1,22 @@
+uuid: 530d8f42-3f47-48c8-8e47-f79c464557c6
+langcode: en
+status: false
+dependencies:
+  theme:
+    - qed_custom
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: qed_custom_primary_local_tasks
+theme: qed_custom
+region: header
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

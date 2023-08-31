@@ -1,0 +1,24 @@
+<div class="card card--publication">
+	<div class="container">
+     {% if fields.field_cover_image %} 
+    <div class="card__image">
+     {{ fields.field_cover_image.content }}
+	  </div>
+    {% endif %}
+	<div class="card__content">
+		<div class="content__category"><i class="ri-send-plane-fill"></i> {{ fields.field_content_category.content }}</div>
+		<div class="content__title">
+			<h3>{{ fields.title.content }}</h3>
+		</div>
+		<div class="content__body">{{ fields.body.content }}</div>
+		<div class="content__languages">
+      {% if fields.field_languages.content %}
+        {{ fields.field_languages.content }}
+      {% endif %}
+		</div>
+	</div>
+	<div class="card__right">
+		<div class="date"><i class="ri-send-plane-fill"></i> {{ fields.field_published_date.content }}</div>
+	</div>
+  </div>
+</div>
