@@ -10,17 +10,21 @@ img {
   font-weight: 400;
 }
 
-header {
+#block-views-block-publication-block-1 header {
   width: 60%;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
   font-size: 20px;
 }
+
 header[role=banner] {
   background-color: #f1f1f1;
   height: 150px;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
 
 .views-row:has(.card--publication) .card--publication {
@@ -154,6 +158,8 @@ header[role=banner] {
 }
 .pager--wrapper > .container form {
   color: #1cabe2;
+  display: flex;
+  align-items: center;
 }
 .pager--wrapper > .container form select {
   background: #fff;
@@ -179,7 +185,7 @@ header[role=banner] {
   padding: 6px;
   text-align: center;
   margin: 10px;
-  margin-left: 30%;
+  margin-left: 0;
 }
 
 @media only screen and (max-width: 960px) {
@@ -223,6 +229,18 @@ header[role=banner] {
   }
   .pager--wrapper > .container ul.pager__items {
     margin-left: -50%;
+  }
+  .pager--wrapper > .container ul.pager__items {
+    margin-right: 10px;
+  }
+  .pager--wrapper > .container ul.pager__items .dropdown button {
+    margin-right: 10px;
+  }
+  .pager--wrapper > .container form select {
+    margin-inline: 10px;
+  }
+  .pager--wrapper > .container form #edit-submit-publication {
+    margin-left: 10px;
   }
 }
 
